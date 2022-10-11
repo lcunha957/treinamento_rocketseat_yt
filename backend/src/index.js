@@ -10,7 +10,7 @@ const path = require('path');
 app.use(require('./routes'));
 
 // Database setup
-mongoose.connect('mongodb://localhost:27017/upload',{
+mongoose.connect(process.env.MONGO_URL,{
 useNewUrlParser: true,
 
 });
