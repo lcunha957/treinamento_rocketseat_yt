@@ -1,7 +1,11 @@
+// para ler o dot.env.....
+require('dotenv').config();
+
 const express =  require ('express');
 const app = express();
 const morgan = require('morgan');
 const mongoose = require('mongoose');
+const path = require('path');
 
 app.use(require('./routes'));
 
@@ -20,5 +24,8 @@ app.use(morgan('dev'));
 app.get("/", (req,res) =>{
     return res.json({hello: "world"});
 });
+
+// Para liberar o acesso a pasta de arquivos salvos pela aplicação
+app.use('/files', express.static(path.resolve(_dirname, '..', 'tmp', 'uploads')));
 
 app.listen(3000);
