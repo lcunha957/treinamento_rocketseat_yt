@@ -1,10 +1,10 @@
 import { Component } from 'react';
-import GlobalStyle from './styles/global';
+import './styles/global.css';
 
 
 class App extends Component {
  render(){
-  return   <GlobalStyle/>;
+  return <div/>;
  }
 }
 
