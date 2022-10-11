@@ -26,6 +26,6 @@ app.get("/", (req,res) =>{
 });
 
 // Para liberar o acesso a pasta de arquivos salvos pela aplicação
-app.use('/files', express.static(path.resolve(_dirname, '..', 'tmp', 'uploads')));
+app.use('/files', express.static(path.resolve(__dirname, '..', 'tmp', 'uploads')));
 
 app.listen(3000);
