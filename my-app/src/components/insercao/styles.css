@@ -1,0 +1,20 @@
+
+
+ .dragActive {
+  border-color: #78e5d5;
+ }
+
+.dragReject {
+  border-color: #e57878  
+}
+
+ DropContainer>a:nth-child(n+1) {
+border: 1px dashed #ddd;
+border-radius: 4px;
+cursor: pointer;
+transition: height 0.2s ease;
+}
+
+.uploadMessage .p{
+  
+}
