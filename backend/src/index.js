@@ -10,10 +10,10 @@ const path = require('path');
 app.use(require('./routes'));
 
 // Database setup
-mongoose.connect(process.env.MONGO_URL,{
-useNewUrlParser: true,
+//mongoose.connect(process.env.MONGO_URL,{
+//useNewUrlParser: true,
 
-});
+//});
 
 app.use(express.json());
 

@@ -1,4 +1,4 @@
-const mongoose = require ('mongoose');
+/*const mongoose = require ('mongoose');
 
 
 const PostSchema= new mongoose.Schema({
@@ -21,3 +21,4 @@ if(!this.url){
 }); 
 
 module.exports = mongoose.model('Post', PostSchema);
+*/ 

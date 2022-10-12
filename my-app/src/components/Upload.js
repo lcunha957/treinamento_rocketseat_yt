@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Dropzone from 'react-dropzone';
-import { DropContainer, uploadMessage } from './styles.css';
+import './upload.css';
 
  class Upload extends Component {
     render()
